@@ -16,31 +16,39 @@ session_start();
     <div class="logo">Fit<span>Shop</span></div>
 
     <nav class="nav">
-        <a href="accueil.html">Accueil</a>
+        <a href="index.php">Accueil</a>
         <a href="produit.php">Produits</a>
-        <a href="homme.html">Homme</a>
-        <a href="femme.html">Femme</a>
-        <a href="contact.html">Contact</a>
+        <a href="homme.php">Homme</a>
+        <a href="femme.php">Femme</a>
+        <a href="contact.php">Contact</a>
     </nav>
 
-    <a href="afficher_panier.php" class="btn">🛒 Mon Panier</a>
+    <div class="button">
+        <a href="afficher_panier.php" class="btn">Mon Panier</a>
+        <a href="connexion.php" class="btn">Mon Compte</a>
+    </div>
 </header>
+
+<section class="history">
+    <div class="history-content">
+        <p>
+            Chez FitShop, nous partageons votre passion pour le sport et le bien-être. 
+            Notre aventure a commencé avec une idée simple : proposer des équipements 
+            et accessoires de qualité pour tous ceux qui veulent se dépasser, que vous 
+            soyez débutant ou athlète confirmé.Nous sélectionnons chaque produit avec 
+            soin pour vous offrir performance, confort et style. FitShop, c’est plus 
+            qu’une boutique : c’est une communauté qui vous accompagne à chaque entraînement.
+            Rejoignez-nous et découvrez tout ce qu’il vous faut pour rester motivé et 
+            atteindre vos objectifs !
+        </p>
+    </div>
+</section>
 
 <section class="hero">
     <div class="hero-content">
         <h1>Équipe ton corps.<br>Dépasse tes limites.</h1>
         <p>Matériel de musculation, compléments et accessoires premium.</p>
         <a href="produit.php" class="btn btn-primary">Voir les produits</a>
-    </div>
-</section>
-
-<section class="categories">
-    <h2>Nos catégories</h2>
-    <div class="category-grid">
-        <div class="card">Haltères</div>
-        <div class="card">Compléments</div>
-        <div class="card">Accessoires</div>
-        <div class="card">Vêtements</div>
     </div>
 </section>
 
@@ -93,6 +101,15 @@ session_start();
 
     </div>
 </section>
+
+<section class="reviews">
+    <div class="reviews-content">
+        <h2>Avis de nos clients</h2>
+        <p>Découvrez ce que nos clients pensent de nos produits et de notre service.</p>
+        <a href="avis.php" class="btn btn-primary">Voir les avis</a>
+    </div>
+</section>
+
 
 <footer class="footer">
     <p>© 2026 FitShop — Tous droits réservés</p>

@@ -33,4 +33,13 @@ if (isset($_GET['supprimer'])) {
 if (isset($_GET['vider'])) {
     $_SESSION['panier'] = [];
 }
+
+if (!empty($_SERVER['HTTP_REFERER'])) {
+    header('Location: ' . $_SERVER['HTTP_REFERER']);
+} else {
+    // Sécurité si HTTP_REFERER est absent
+    header('Location: index.php');
+}
+exit;
+
 ?>

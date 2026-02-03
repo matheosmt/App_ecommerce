@@ -9,75 +9,31 @@ $total = 0;
 <head>
     <meta charset="UTF-8">
     <title>Mon panier - FitShop</title>
-    <link rel="stylesheet" href="css/style.css">
-
-    <style>
-        .panier-container {
-            width: 80%;
-            margin: 60px auto;
-            background: #fff;
-            padding: 30px;
-            border-radius: 12px;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 20px;
-        }
-
-        th, td {
-            padding: 15px;
-            text-align: center;
-            border-bottom: 1px solid #ddd;
-        }
-
-        th {
-            background: #f5f5f5;
-        }
-
-        .total {
-            text-align: right;
-            font-size: 22px;
-            margin-top: 20px;
-        }
-
-        .btn-danger {
-            background: #e74c3c;
-            color: #fff;
-            padding: 8px 14px;
-            border-radius: 20px;
-            text-decoration: none;
-        }
-
-        .btn-danger:hover {
-            background: #c0392b;
-        }
-
-        .actions {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 30px;
-        }
-    </style>
+    <link rel="stylesheet" href="css/afficher_panier.css">
 </head>
 
 <body>
 
 <header class="header">
     <div class="logo">Fit<span>Shop</span></div>
+
     <nav class="nav">
         <a href="index.php">Accueil</a>
         <a href="produit.php">Produits</a>
-        <a href="contact.html">Contact</a>
+        <a href="homme.php">Homme</a>
+        <a href="femme.php">Femme</a>
+        <a href="contact.php">Contact</a>
     </nav>
-    <a href="afficher_panier.php" class="btn">🛒 Mon Panier</a>
+
+    <div class="button">
+        <a href="afficher_panier.php" class="btn">Mon Panier</a>
+        <a href="connexion.php" class="btn">Mon Compte</a>
+    </div>
 </header>
 
 <div class="panier-container">
 
-    <h2>🛒 Mon panier</h2>
+    <h2>Mon panier</h2>
 
     <?php if (empty($_SESSION['panier'])): ?>
 
