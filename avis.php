@@ -71,7 +71,7 @@ unset($_SESSION["avis_success"], $_SESSION["avis_error"]);
 
     <div id="reviewForm" class="review-form hidden">
         <h3>Votre avis</h3>
-        <form method="post" action="submit_avis.php">
+        <form method="post" action="submit.php">
             <input type="text" name="nom" placeholder="Votre nom" required>
             
             <label for="note">Note :</label>
