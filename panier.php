@@ -1,12 +1,10 @@
 <?php
 session_start();
 
-// Initialiser le panier
 if (!isset($_SESSION['panier'])) {
     $_SESSION['panier'] = [];
 }
 
-// Ajouter un produit
 if (isset($_POST['ajouter'])) {
     $id = $_POST['id'];
     $nom = $_POST['nom'];
@@ -23,13 +21,11 @@ if (isset($_POST['ajouter'])) {
     }
 }
 
-// Supprimer un produit
 if (isset($_GET['supprimer'])) {
     $id = $_GET['supprimer'];
     unset($_SESSION['panier'][$id]);
 }
 
-// Vider le panier
 if (isset($_GET['vider'])) {
     $_SESSION['panier'] = [];
 }
@@ -37,7 +33,6 @@ if (isset($_GET['vider'])) {
 if (!empty($_SERVER['HTTP_REFERER'])) {
     header('Location: ' . $_SERVER['HTTP_REFERER']);
 } else {
-    // Sécurité si HTTP_REFERER est absent
     header('Location: index.php');
 }
 exit;

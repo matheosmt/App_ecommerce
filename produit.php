@@ -3,17 +3,18 @@ session_start();
 
 // Tableau de produits
 $produits = [
-    ["id"=>1, "nom"=>"Haltère 20kg", "prix"=>49.99, "img"=>"https://via.placeholder.com/250"],
-    ["id"=>2, "nom"=>"Whey Protéine", "prix"=>29.99, "img"=>"https://via.placeholder.com/250"],
-    ["id"=>3, "nom"=>"Gants de training", "prix"=>14.99, "img"=>"https://via.placeholder.com/250"],
-    ["id"=>4, "nom"=>"Tapis de yoga", "prix"=>19.99, "img"=>"https://via.placeholder.com/250"],
-    ["id"=>5, "nom"=>"Corde à sauter", "prix"=>9.99, "img"=>"https://via.placeholder.com/250"],
-    ["id"=>6, "nom"=>"Haltère 10kg", "prix"=>34.99, "img"=>"https://via.placeholder.com/250"],
-    ["id"=>7, "nom"=>"Shaker Pro", "prix"=>12.99, "img"=>"https://via.placeholder.com/250"],
-    ["id"=>8, "nom"=>"Veste de sport", "prix"=>39.99, "img"=>"https://via.placeholder.com/250"],
-    ["id"=>9, "nom"=>"Bande élastique", "prix"=>7.99, "img"=>"https://via.placeholder.com/250"],
-    ["id"=>10, "nom"=>"Chaussures running", "prix"=>69.99, "img"=>"https://via.placeholder.com/250"],
-    ["id"=>11, "nom"=>"Jogging", "prix"=>29.99, "img"=>"https://via.placeholder.com/250"]
+    ["id"=>1, "nom"=>"Haltères", "prix"=>49.99, "img"=>"assets/img/haltères.jpg"],
+    ["id"=>12, "nom"=>"Barres de musculation", "prix"=>49.99, "img"=>"assets/img/barre.jpg"],
+    ["id"=>13, "nom"=>"Poids", "prix"=>19.99, "img"=>"assets/img/poids.jpg"],
+    ["id"=>14, "nom"=>"Kettlebell", "prix"=>19.99, "img"=>"assets/img/kettlebell.jpg"],
+    ["id"=>15, "nom"=>"Corde à sauter", "prix"=>19.99, "img"=>"assets/img/corde.jpg"],
+    ["id"=>9, "nom"=>"Bande élastique", "prix"=>7.99, "img"=>"assets/img/elastique.jpg"],
+    ["id"=>2, "nom"=>"Whey Protéine", "prix"=>29.99, "img"=>"assets/img/whey.jpg"],
+    ["id"=>7, "nom"=>"Shaker Pro", "prix"=>12.99, "img"=>"assets/img/shaker.jpg"],
+    ["id"=>3, "nom"=>"Gants de training", "prix"=>14.99, "img"=>"assets/img/gants.jpg"],
+    ["id"=>8, "nom"=>"Veste de sport", "prix"=>39.99, "img"=>"assets/img/veste.jpg"],
+    ["id"=>10, "nom"=>"Chaussures running", "prix"=>69.99, "img"=>"assets/img/chaussures.jpg"],
+    ["id"=>11, "nom"=>"Jogging", "prix"=>29.99, "img"=>"assets/img/joggo.jpg"]
 ];
 ?>
 
@@ -32,8 +33,8 @@ $produits = [
     <nav class="nav">
         <a href="index.php">Accueil</a>
         <a href="produit.php">Produits</a>
-        <a href="homme.php">Homme</a>
-        <a href="femme.php">Femme</a>
+        <a href="nutrition.php">Nutrition</a>
+        <a href="entrainement.php">Entrainement</a>
         <a href="contact.php">Contact</a>
     </nav>
 

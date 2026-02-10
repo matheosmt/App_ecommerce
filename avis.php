@@ -25,8 +25,8 @@ $avisClients = [
     <nav class="nav">
         <a href="index.php">Accueil</a>
         <a href="produit.php">Produits</a>
-        <a href="homme.php">Homme</a>
-        <a href="femme.php">Femme</a>
+        <a href="nutrition.php">Nutrition</a>
+        <a href="entrainement.php">Entrainement</a>
         <a href="contact.php">Contact</a>
     </nav>
 

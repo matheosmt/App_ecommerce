@@ -18,8 +18,8 @@ session_start();
     <nav class="nav">
         <a href="index.php">Accueil</a>
         <a href="produit.php">Produits</a>
-        <a href="homme.php">Homme</a>
-        <a href="femme.php">Femme</a>
+        <a href="nutrition.php">Nutrition</a>
+        <a href="entrainement.php">Entrainement</a>
         <a href="contact.php">Contact</a>
     </nav>
 
@@ -59,13 +59,13 @@ session_start();
 
         <!-- PRODUIT 1 -->
         <div class="product-card">
-            <img src="https://via.placeholder.com/250" alt="Haltère 20kg">
-            <h3>Haltère 20kg</h3>
+            <img src="assets/img/haltères.jpg" alt="Haltères">
+            <h3>Haltères</h3>
             <p>49,99 €</p>
 
             <form method="post" action="panier.php">
                 <input type="hidden" name="id" value="1">
-                <input type="hidden" name="nom" value="Haltère 20kg">
+                <input type="hidden" name="nom" value="Haltère">
                 <input type="hidden" name="prix" value="49.99">
                 <button type="submit" name="ajouter">Ajouter au panier</button>
             </form>
@@ -73,7 +73,7 @@ session_start();
 
         <!-- PRODUIT 2 -->
         <div class="product-card">
-            <img src="https://via.placeholder.com/250" alt="Whey Protéine">
+            <img src="assets/img/whey.jpg" alt="Whey Protéine">
             <h3>Whey Protéine</h3>
             <p>29,99 €</p>
 
@@ -87,13 +87,13 @@ session_start();
 
         <!-- PRODUIT 3 -->
         <div class="product-card">
-            <img src="https://via.placeholder.com/250" alt="Gants de training">
-            <h3>Gants de training</h3>
+            <img src="assets/img/barre.jpg" alt="Barre de musculation">
+            <h3>Barre de musculation</h3>
             <p>14,99 €</p>
 
             <form method="post" action="panier.php">
                 <input type="hidden" name="id" value="3">
-                <input type="hidden" name="nom" value="Gants de training">
+                <input type="hidden" name="nom" value="Barre de musculation">
                 <input type="hidden" name="prix" value="14.99">
                 <button type="submit" name="ajouter">Ajouter au panier</button>
             </form>
