@@ -1,14 +1,29 @@
 <?php
 session_start();
 
-// Exemple d'avis clients
 $avisClients = [
     ["nom"=>"Alice", "note"=>5, "message"=>"Super boutique ! Produits de qualité et livraison rapide."],
     ["nom"=>"Bob", "note"=>4, "message"=>"Très satisfait, je recommande surtout les haltères."],
     ["nom"=>"Claire", "note"=>5, "message"=>"Service client au top et produits conformes."],
     ["nom"=>"David", "note"=>3, "message"=>"Bonne boutique mais délai de livraison un peu long."],
 ];
+
+
+
+$avisSession = $_SESSION["avis_clients"] ?? [];
+if (!is_array($avisSession)) $avisSession = [];
+
+$avisClients = array_merge($avisSession, $avisClients);
+
+
+$successMsg = $_SESSION["avis_success"] ?? "";
+$errorMsg = $_SESSION["avis_error"] ?? "";
+$old = $_SESSION["avis_old"] ?? ["nom"=>"", "note"=>5, "message"=>""];
+
+
+unset($_SESSION["avis_success"], $_SESSION["avis_error"]);
 ?>
+
 
 <!DOCTYPE html>
 <html lang="fr">
@@ -54,7 +69,6 @@ $avisClients = [
         <button id="toggleForm" class="btn btn-primary">Laisser un avis</button>
     </div>
 
-    <!-- FORMULAIRE CACHÉ -->
     <div id="reviewForm" class="review-form hidden">
         <h3>Votre avis</h3>
         <form method="post" action="submit_avis.php">
@@ -81,7 +95,6 @@ $avisClients = [
 </footer>
 
 <script>
-// Toggle affichage du formulaire
 document.getElementById("toggleForm").addEventListener("click", function() {
     const form = document.getElementById("reviewForm");
     form.classList.toggle("hidden");
